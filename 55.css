@@ -272,91 +272,88 @@ span {
 
 
 /****/
+/* ================================
+   قسم المميزات (Features Section)
+================================ */
+
 .features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 50px 20px;
-    background-color: #f9f9f9; /* لون خلفية هادئ */
-    direction: rtl; /* لضمان الترتيب العربي */
+    display: flex;                 /* عرض العناصر بنظام Flex */
+    flex-wrap: wrap;               /* السماح بانتقال العناصر لسطر جديد */
+    justify-content: center;        /* توسيط البطاقات أفقياً */
+    gap: 30px;                      /* مسافة بين البطاقات */
+    padding: 80px 20px;             /* مسافات داخلية للقسم */
+    background-color: #fefafa;      /* لون خلفية هادئ */
+    direction: rtl;                 /* ترتيب النص من اليمين لليسار */
+
+    position: relative;             /* لتفعيل التحكم في الطبقات */
+    z-index: 5;                     /* إبقاء القسم فوق الخلفيات الأخرى */
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05); /* ظل خفيف أسفل القسم */
+    clip-path: inset(0px 0px -50px 0px);        /* إظهار الظل من الأسفل فقط */
 }
 
-/* --- قسم المميزات (Features Section) --- */
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 80px 20px;
-    background-color: #fefafa; /* لون خلفية هادئ متناسق مع الهوية */
-    direction: rtl;
-    
-    /* إضافة الظل في نهاية السكشن ليفصله عما بعده */
-    position: relative;
-    z-index: 5;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05); /* ظل سفلي ناعم للفصل */
-    
-    /* التأكد من أن الظل يظهر فقط في الأسفل */
-    clip-path: inset(0px 0px -50px 0px); 
-}
+/* ================================
+   بطاقة الميزة (Feature Card)
+================================ */
 
-/* --- تنسيق بطاقة الميزة (Feature Card) --- */
 .feature {
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 40px 30px;
-    width: 320px;
-    text-align: center;
-    
-    /* ظل خفيف جداً للبطاقة في الحالة العادية */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
-    
-    /* حركة انتقالية فائقة النعومة باستخدام cubic-bezier */
-    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    background-color: #ffffff;      /* لون خلفية البطاقة */
+    width: 320px;                   /* عرض البطاقة */
+    padding: 40px 30px;             /* مسافات داخلية للبطاقة */
+    border-radius: 20px;             /* تدوير الزوايا */
+    text-align: center;              /* توسيط النص */
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02); /* ظل خفيف للبطاقة */
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* حركة ناعمة */
 }
 
-/* --- تأثير السلاسة عند تحريك الماوس (Hover Effect) --- */
+/* تأثير عند مرور الماوس على البطاقة */
 .feature:hover {
-    /* رفع البطاقة للأعلى بسلاسة */
-    transform: translateY(-12px);
-    
-    /* زيادة الظل ليعطي إيحاء بالارتفاع والعمق */
-    box-shadow: 0 15px 35px rgba(130, 33, 70, 0.12); /* ظل بلون الهوية العنابي */
+    transform: translateY(-12px);   /* رفع البطاقة للأعلى */
+    box-shadow: 0 15px 35px rgba(130, 33, 70, 0.12); /* زيادة الظل */
 }
 
-/* --- تنسيق الأيقونة (إيموجي أو غيره) --- */
+/* ================================
+   الأيقونة داخل البطاقة
+================================ */
+
 .feature span {
-    font-size: 50px;
-    display: block;
-    margin-bottom: 20px;
-    transition: transform 0.4s ease; /* حركة سلسة للأيقونة أيضاً */
+    display: block;                 /* جعل الأيقونة في سطر مستقل */
+    font-size: 50px;                /* حجم الأيقونة */
+    margin-bottom: 20px;            /* مسافة أسفل الأيقونة */
+    transition: transform 0.4s ease;/* حركة ناعمة للأيقونة */
 }
 
-/* تكبير الأيقونة قليلاً عند التحويم فوق البطاقة */
+/* تكبير الأيقونة قليلاً عند المرور عليها */
 .feature:hover span {
     transform: scale(1.1) rotate(5deg);
 }
 
-/* --- تنسيق العناوين --- */
+/* ================================
+   العناوين والنصوص
+================================ */
+
 .feature h3 {
-    color: var(--secondary-color); /* استخدام لونك الموحد */
-    font-size: 1.4rem;
-    margin-bottom: 12px;
-    font-weight: 700;
+    color: var(--secondary-color);  /* لون العنوان */
+    font-size: 1.4rem;              /* حجم الخط */
+    font-weight: 700;               /* سماكة الخط */
+    margin-bottom: 12px;            /* مسافة أسفل العنوان */
 }
 
-/* --- تنسيق النص الوصفي --- */
 .feature p {
-    color: #777;
-    line-height: 1.8;
-    font-size: 0.95rem;
+    color: #777;                    /* لون النص */
+    font-size: 0.95rem;             /* حجم النص */
+    line-height: 1.8;               /* ارتفاع السطر */
 }
 
-/* --- تأثير الأنيميشن عند الظهور --- */
+/* ================================
+   تأثير الظهور (Animation)
+================================ */
+
 .animate-on-scroll {
-    opacity: 1;
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    opacity: 1;                     /* إظهار العنصر */
+    transition: opacity 0.8s ease-out, 
+                transform 0.8s ease-out; /* حركة ظهور ناعمة */
 }
 /* --- About Section (تنسيق قسم عن المطور) --- */
 .about-section {

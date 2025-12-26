@@ -119,6 +119,7 @@
         <!--About section-->
         <section class="about-section" id="about">
             <div class="section-content">
+                <!-- div for image -->
                 <div class="about-image-wrapper">
                     <!-- added the image -->
                     <img src="adviceimg/تصميم بدون عنوان7.png" class="about-image">
@@ -131,7 +132,10 @@
                         وأجود المنتجات الأصلية التي تجمع بين التقنيات المتطورة والمكونات الطبيعية. هدفنا هو مرافقتكِ في
                         رحلة العناية بنفسك، لنمنحكِ روتيناً يومياً يحول عنايتكِ ببشرتك إلى لحظات من الرفاهية والجمال
                     </p>
+                    <!-- div for social buttons -->
                     <div class="social-link-list">
+                        <!-- each icon is a link + درنا الايقونات عن طريق الباكج font awesome -->
+                         <!-- i tag used to bring icons -->
                         <a href="# " class="social-link"><i class="fa-brands fa-facebook"></i></a>
                         <a href="# " class="social-link"><i class="fa-brands fa-instagram"></i></a>
                         <a href="# " class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
@@ -145,18 +149,23 @@
 
             <div class="section-content">
                 <div class="menu-header">
-                    <a href="pro.html" class="view-all-badge" style="text-decoration: none;">عرض المزيد</a>
+                    <!-- رابط زر عرض المزيد -->
+                    <a href="pro.html" class="view-all-badge">عرض المزيد</a>
                 </div>
-
+                <!-- قائمة المنتجات ul -->
                 <ul class="menu-list">
+                    <!-- كارت المنتج الواحد li -->
                     <li class="menu-item">
                         <div class="image-container">
+                            <!-- نص بديل alt="مقشر" -->
                             <img src="img/تصميم بدون عنوان.png" class="menu-image" alt="مقشر">
                         </div>
                         <div class="menu-details">
                             <h3 class="name">مقشر طبيعي</h3>
+                            <!-- used del tag to make a line over the previous price -->
                             <p class="text"><del>110 د.ل </del></p>
                             <div class="price">45.00 د.ل</div>
+                            <!-- js ربطنا بال - js ميثود موجودة في showAlert -->
                             <button class="add-to-cart-btn" onclick="showAlert()">إضافة إلى السلة</button>
                         </div>
                     </li>
@@ -199,13 +208,18 @@
                 </ul>
             </div>
         </section>
+        <!-- قسم النصائح -->
         <!-- Testimonials section -->
         <section class="testimonials-section" id="testimonials">
             <h2 class="section-title">نصائح</h2>
             <div class="section-content">
+                <!-- swiper هي كلاس محجوز للمكتبة، بدونه لن يعمل التأثير المنزلق. -->
                 <div class="slider-container swiper">
+                    <!-- slider-wrapper: هذا هو "الشريط" الطويل الذي تصطف عليه النصائح -->
                     <div class="slider-wrapper">
+                        <!-- swiper-wrapper: هنا تخبر الكود أن كل ما بداخلي هو العناصر التي ستتحرك. -->
                         <ul class="testimonials-list swiper-wrapper">
+                            <!-- each slide swiper-slide حتى هيا كلمة محجوزة للمكتبة تقوله ان هذا سلايد-->
                             <li class="testimonial swiper-slide">
                                 <img src="adviceimg/تصميم بدون عنوان.png" alt="User" class="user-image">
                                 <h3 class="name">Vitamin C</h3>
@@ -237,7 +251,9 @@
                                     مع الالتزام بـ "الغسول المائي"</i>
                             </li>
                         </ul>
+                        <!-- هي "النقط" الصغيرة التي تظهر عادةً في الأسفل لتعرف في أي نصيحة أنت الآن. -->
                         <div class="swiper-pagination"></div>
+                        <!-- الأسهم التي يضغط عليها المستخدم للتنقل يدوياً. -->
                         <div class="swiper-slide-button swiper-button-prev"></div>
                         <div class="swiper-slide-button swiper-button-next"></div>
                     </div>
@@ -251,6 +267,7 @@
                 <ul class="gallery-list">
                     <li class="gallery-item">
                         <img src="companyimg/تصميم بدون عنوان.png" alt="company" class="gallery-image">
+                        <!-- هذا الـ div يوضع "فوق" الصورة تماماً باستخدام خاصية position: absolute في CSS. -->
                         <div class="company-overlay">Missha</div>
                     </li>
 
@@ -277,20 +294,19 @@
                     <li class="gallery-item">
                         <img src="companyimg/تصميم بدون عنوان6.png" alt="company" class="gallery-image">
                         <div class="company-overlay">Anua</div>
-                    </li>
-
+                    </li>                    
                 </ul>
-            </div>
-            <!--contacr us-->
+            </div>          
         </section>
+          <!--contacr us-->
         <section class="contact-section" id="contact">
             <h2 class="section-title">اقترحاتك</h2>
             <div class="section-content">
                 <ul class="contact-info-list">
-
                     <li class="contact-info">
                         <i class="fa-solid fa-location-crosshairs"></i>
                         <p>بن عاشور | طرابلس | ليبيا</p>
+                    </li>
                     <li class="contact-info">
                         <i class="fa-regular fa-envelope"></i>
                         <p>skinCare2025@gmail.com</p>
@@ -303,26 +319,25 @@
                         <i class="fa-regular fa-clock"></i>
                         <p>على مدار الاسبوع من : | 9:00 AM 10:00 PM</p>
                     </li>
-                    <li class="contact-info">
-
+                    <li class="contact-info"></li>
                     <li class="contact-info">
                         <i class="fa-solid fa-globe"></i>
-                        <p>www.codingnepalweb.com</p>
+                        <p>https://nmr-skincare-shop.netlify.app</p>
                     </li>
-
                 </ul>
-
+                <!-- action="#": تعني حالياً أن البيانات لا تُرسل لمكان معين -->
                 <form action="#" class="contact-form" id="suggestionForm">
                     <input type="text" placeholder="Your name" class="form-input" required>
+                    <!-- مخصص للبريد الإلكتروني -->
                     <input type="email" placeholder="Your email" class="form-input" required>
+                    <!-- يختلف عن الـ input العادي بأنه يسمح بكتابة أسطر كثيرة -->
                     <textarea placeholder="Your message" class="form-input" required></textarea>
                     <button class="submit-button">ارسال</button>
                 </form>
 
             </div>
         </section>
-        <!--Footer section-->
-        <!--footer-->
+        <!--Footer section-->        
         <div class="footer-black-bar">
             <div class="bar-container">
                 <div class="copyright">
