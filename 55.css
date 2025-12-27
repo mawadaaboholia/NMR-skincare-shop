@@ -413,32 +413,18 @@ span {
     font-size: 1.2rem;
     color: var(--secondary-color);
     margin-bottom: 5px;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     display: inline-block;
     
- animation: fadeInUp 0.8s ease-out forwards;
+ animation: fadeInUp 0.8s ease-out ;
 }
 
 .about-section .about-details .title:hover {
-    color: rgb(118, 10, 31);
-    transform: scale(1.1); /* تكبير العنوان عند التحويم */
-      transition: color 0.5s ease; /* تغيير اللون بسلاسة فائقة عند مرور الماوس */
+    color: var(--secondary-color);
+    transform: translateY(-8px) scale(1.1);
+     
 }
-
-.about-section .about-details .text {
-    line-height: 1.6;
-    margin: 15px 0 25px; /* تقريب النص من العنوان والصورة */
-    font-size: 1.1rem;
-    color: var(--dark-color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* خط نصوص مريح للعين */
-    transition: color 0.4s ease;
-    /**/
-    /* جعل النص يظهر بعد العنوان بقليل (Delay) ليعطي طابعاً احترافياً */
-    opacity: 0; /* يبدأ مخفي */
-    animation: fadeInUp 0.8s ease-out 0.3s forwards; /* يبدأ بعد 0.3 ثانية */
-}
-
 /* تنسيق روابط التواصل الاجتماعي */
 .about-section .social-link-list {
     display: flex;
