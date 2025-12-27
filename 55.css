@@ -253,7 +253,7 @@ span {
         text-align: center;      /* توسيط النصوص */
         padding-top: 100px;
     }
-    .hero-details .description { margin: 25 auto; }
+    .hero-details .description { margin: 25px auto; }
     .hero-details .buttons { justify-content: center; }
 }
 
