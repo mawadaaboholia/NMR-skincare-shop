@@ -249,16 +249,23 @@ span {
 @media (max-width: 992px) {
 
     .hero-section .section-content {
-        flex-direction: column;  /* وضع الصورة تحت النص بدلاً من بجانبه */
+        flex-direction: column-reverse;  /* وضع الصورة تحت النص بدلاً من بجانبه */
         text-align: center;      /* توسيط النصوص */
-        padding-top: 100px;
-    }
+        padding-bottom: 100px;
+    } 
+    .about-section .section-content{
+        
+    flex-direction: column !important;
+ }
     .hero-details .description { margin: 25px auto; }
     .hero-details .buttons { justify-content: center; }
+    
+
 }
 
 /* للشاشات الصغيرة (الجوال) */
 @media (max-width: 600px) {
+
     .hero-details .title { font-size: 2.5rem; } /* تصغير العنوان ليتناسب مع الجوال */
     .hero-image { max-width: 90%; }
      #menu-open-button, 
@@ -348,9 +355,7 @@ span {
 ================================ */
 
 .animate-on-scroll {
-    opacity: 1;                     /* إظهار العنصر */
-    transition: opacity 0.8s ease-out, 
-                transform 0.8s ease-out; /* حركة ظهور ناعمة */
+    transition: transform 0.8s ease-out; /* حركة ظهور ناعمة */
 }
 /* --- About Section (تنسيق قسم عن المطور) --- */
 .about-section {
@@ -379,7 +384,7 @@ span {
 .about-section .about-image-wrapper .about-image {
     width: 450px;  /* تصغير الحجم قليلاً ليتناسب مع تقريب المسافات */
     height: 450px;
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 50%; /* جعل الصورة دائرية */
     
     /* إضافة إطار دائري (Border) */
