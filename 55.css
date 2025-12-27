@@ -384,7 +384,7 @@ span {
 .about-section .about-image-wrapper .about-image {
     width: 450px;  /* تصغير الحجم قليلاً ليتناسب مع تقريب المسافات */
     height: 450px;
-    /* object-fit: cover; */
+    object-fit: cover;
     border-radius: 50%; /* جعل الصورة دائرية */
     
     /* إضافة إطار دائري (Border) */
