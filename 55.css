@@ -74,8 +74,6 @@ header .navbar {
     display: flex;
     gap: 10px; /* زدنا المسافة قليلاً لتوزيع أفضل */
     /* هذا السطر يدفع القائمة لتكون في منتصف المساحة المتبقية */
-    /* باش تجي القائمة فالوسط بزبط */
-    margin-right: 50px;
     margin-left: auto;
 }
 
@@ -249,10 +247,7 @@ span {
     }
 /* للشاشات المتوسطة (مثل التابلت) */
 @media (max-width: 992px) {
-    #menu-open-button, 
-    #menu-close-button {
-    display: flex;
-    }
+
     .hero-section .section-content {
         flex-direction: column;  /* وضع الصورة تحت النص بدلاً من بجانبه */
         text-align: center;      /* توسيط النصوص */
@@ -267,7 +262,10 @@ span {
 @media (max-width: 600px) {
     .hero-details .title { font-size: 2.5rem; } /* تصغير العنوان ليتناسب مع الجوال */
     .hero-image { max-width: 90%; }
- 
+     #menu-open-button, 
+    #menu-close-button {
+    display: flex;
+    }
     }
 
 
