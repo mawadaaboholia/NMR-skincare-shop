@@ -255,7 +255,6 @@ span {
     }
     .hero-details .description { margin: 25 auto; }
     .hero-details .buttons { justify-content: center; }
-    .hero-image { max-width: 75%; }
 }
 
 /* للشاشات الصغيرة (الجوال) */
