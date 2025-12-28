@@ -405,7 +405,7 @@ span {
 /* تنسيق تفاصيل النصوص */
 .about-section .about-details {
     max-width: 45%;
-    text-align: right; /* محاذاة النص لليمين بما أنه عربي */
+    text-align: center; /* محاذاة النص لليمين بما أنه عربي */
 }
 
 .about-section .about-details .title {
@@ -416,7 +416,7 @@ span {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     display: inline-block;
-    
+    margin: 0 40px;
  animation: fadeInUp 0.8s ease-out ;
 }
 
