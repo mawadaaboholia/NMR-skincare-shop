@@ -1204,7 +1204,7 @@ span {
     .hero-section .section-content {
         gap: 5px;
         text-align: center;
-        padding: 50px 20px 40px;
+        padding: 50px 20px 80px;
         flex-direction: column-reverse;
         justify-content: center;
     }
