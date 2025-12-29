@@ -1221,11 +1221,11 @@ span {
 
     .hero-section .hero-image-wrapper {
         max-width: 270px;
-        margin-right: 0;
+        /* margin-right: 0; */
     }
 
     .about-section .section-content {
-        gap: 70px;
+        gap: 0px;
         flex-direction: column-reverse;
     }
 
