@@ -1,10 +1,10 @@
 /* Navbar */
 .navbar {
-    background-color: #822146; 
+    background-color: #822146;
     width: 100%;
     height: 80px;
     direction: rtl;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     right: 0;
@@ -37,6 +37,7 @@
     background-color: #ffffff;
     transform: scale(1.05);
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
 
 * {
@@ -47,10 +48,12 @@
 }
 
 body {
-    padding-top: 100px; /* هذا يمنع المحتوى من الاختفاء تحت الناف بار */
-  background: linear-gradient(to bottom, #FCF8F8 0%, #FBEFEF, #F9DFDF, #F5AFAF 100%);
+    padding-top: 100px;
+    /* هذا يمنع المحتوى من الاختفاء تحت الناف بار */
+    background: linear-gradient(to bottom, #FCF8F8 0%, #FBEFEF, #F9DFDF, #F5AFAF 100%);
     color: #333;
-    padding-bottom: 0px; /* تم تعديلها لتشمل الأسفل أيضاً */
+    padding-bottom: 0px;
+    /* تم تعديلها لتشمل الأسفل أيضاً */
 }
 
 .container {
@@ -65,11 +68,12 @@ header {
     padding: 20px;
     background: white;
     border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
 }
 
 header h1 {
- color: #822146; /* تغيير اللون ليتناسب مع هوية الموقع */
+    color: #822146;
+    /* تغيير اللون ليتناسب مع هوية الموقع */
     margin-bottom: 10px;
 }
 
@@ -80,7 +84,7 @@ header h1 {
     display: flex;
     overflow: hidden;
     margin-bottom: 30px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
 }
 
@@ -104,14 +108,28 @@ header h1 {
     font-weight: bold;
 }
 
-.badge.yellow { background: #fef9e7; color: #f1c40f; }
-.badge.green { background: #eafaf1; color: #2ecc71; }
-.badge.pink { background: #FFE4EF; color: #d94e75; } /* 🌟 اللون الجديد 🌟 */
+.badge.yellow {
+    background: #fef9e7;
+    color: #f1c40f;
+}
+
+.badge.green {
+    background: #eafaf1;
+    color: #2ecc71;
+}
+
+.badge.pink {
+    background: #FFE4EF;
+    color: #d94e75;
+}
+
+/* 🌟 اللون الجديد 🌟 */
 
 .product-content h2 {
     font-size: 28px;
     margin-top: 15px;
-    color: #822146;}
+    color: #822146;
+}
 
 .subtitle {
     color: #7f8c8d;
@@ -133,7 +151,7 @@ header h1 {
     content: "•";
     color: #3498db;
     font-weight: bold;
-    display: inline-block; 
+    display: inline-block;
     width: 1em;
     margin-right: -1em;
 }
@@ -167,6 +185,7 @@ header h1 {
     .product-card {
         flex-direction: column-reverse;
     }
+
     .product-image {
         height: 250px;
     }
@@ -180,7 +199,7 @@ header h1 {
     color: #822146;
     padding: 30px 0;
     width: 100%;
-    
+
 }
 
 .bar-container {
@@ -192,14 +211,16 @@ header h1 {
     padding: 0 20px;
 }
 
-.policy-links a, .social-icons a {
+.policy-links a,
+.social-icons a {
     color: #822146;
     text-decoration: none;
     transition: 0.3s;
     margin: 0 10px;
 }
 
-.policy-links a:hover, .social-icons a:hover {
+.policy-links a:hover,
+.social-icons a:hover {
     color: #E49BA6;
 }
 
@@ -210,6 +231,8 @@ header h1 {
         gap: 20px;
         text-align: center;
     }
-    .hero h1 { font-size: 1.8rem; }
-}
 
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}

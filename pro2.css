@@ -8,19 +8,20 @@
 }
 
 body {
-    padding-top: 80px; 
+    padding-top: 80px;
     font-family: 'Cairo', sans-serif;
-    background-color: #fff; /* خلفية الصفحة الأساسية */
+    background-color: #fff;
+    /* خلفية الصفحة الأساسية */
     line-height: 1.6;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #822146; 
+    background-color: #822146;
     width: 100%;
     height: 80px;
     direction: rtl;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     right: 0;
@@ -56,14 +57,16 @@ body {
 
 /* Best Sellers Section - يمتد اللون لعرض الشاشة بالكامل */
 .best-sellers {
-      width: 100%;
-    background-color: #fdf2f2; 
+    width: 100%;
+    background-color: #fdf2f2;
     padding: 60px 0;
     text-align: center;
     /* --- إضافة الظل هنا --- */
-    position: relative; /* لضمان ظهور الظل فوق السكشن الذي يليه */
-    z-index: 10;       /* يرفع السكشن قليلاً ليتداخل الظل مع ما تحته */
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    /* لضمان ظهور الظل فوق السكشن الذي يليه */
+    z-index: 10;
+    /* يرفع السكشن قليلاً ليتداخل الظل مع ما تحته */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
     /* التفسير: 0 (أفقياً) ، 15px (لأسفل) ، 25px (درجة التمويه) */
 }
 
@@ -75,12 +78,13 @@ body {
 }
 
 .best-sellers p {
-     display: block;
+    display: block;
     font-size: 1.4rem;
     font-weight: bold;
     color: #822146;
     margin: 10px 0 20px 0;
 }
+
 /* حاوية المحتوى داخل السكشن للحفاظ على التوازن */
 .products-container {
     max-width: 1200px;
@@ -94,11 +98,13 @@ body {
 
 /* Main Products Section - سكشن المجموعة المختارة */
 .container {
-    width: 100%; /* جعل الحاوية تأخذ العرض كاملاً */
-    max-width: 100% !important; 
+    width: 100%;
+    /* جعل الحاوية تأخذ العرض كاملاً */
+    max-width: 100% !important;
     margin: 0;
     padding: 60px 0;
-     background:linear-gradient(#FCF8F8, #FBEFEF ,#F9DFDF ,#F5AFAF ); /* لون مختلف عن السكشن السابق */
+    background: linear-gradient(#FCF8F8, #FBEFEF, #F9DFDF, #F5AFAF);
+    /* لون مختلف عن السكشن السابق */
 }
 
 .hero {
@@ -128,22 +134,25 @@ body {
 }
 
 /* تصميم الكروت الموحد */
-.product-card, .card {
+.product-card,
+.card {
     background: white;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: 0.4s ease;
     border: 1px solid #f0f0f0;
     text-align: center;
 }
 
-.product-card:hover, .card:hover {
+.product-card:hover,
+.card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(130, 33, 70, 0.1);
 }
 
-.product-card img, .product-img {
+.product-card img,
+.product-img {
     width: 100%;
     height: 250px;
     object-fit: cover;
@@ -195,14 +204,16 @@ body {
     padding: 0 20px;
 }
 
-.policy-links a, .social-icons a {
+.policy-links a,
+.social-icons a {
     color: #822146;
     text-decoration: none;
     transition: 0.3s;
     margin: 0 10px;
 }
 
-.policy-links a:hover, .social-icons a:hover {
+.policy-links a:hover,
+.social-icons a:hover {
     color: #E49BA6;
 }
 
@@ -213,5 +224,8 @@ body {
         gap: 20px;
         text-align: center;
     }
-    .hero h1 { font-size: 1.8rem; }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
 }

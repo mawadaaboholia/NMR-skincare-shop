@@ -12,20 +12,23 @@ body {
     background: linear-gradient(to bottom, #FCF8F8 0%, #FBEFEF, #F9DFDF, #F5AFAF 100%);
     min-height: 100vh;
     display: flex;
-    justify-content: center; /* توسيط الكرت أفقياً */
-    align-items: center;     /* توسيط الكرت عمودياً */
+    justify-content: center;
+    /* توسيط الكرت أفقياً */
+    align-items: center;
+    /* توسيط الكرت عمودياً */
     padding: 40px 20px;
 }
 
 /* تنسيق الكرت (البطاقة البيضاء) */
 .login-card {
-    background-color: #fdfaf5; 
+    background-color: #fdfaf5;
     width: 100%;
     max-width: 420px;
     padding: 30px;
     border-radius: 40px;
-    border: 6px solid #e07a7a; /* إطار وردي سميك يعطي شكل طفولي وأنيق */
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    border: 6px solid #e07a7a;
+    /* إطار وردي سميك يعطي شكل طفولي وأنيق */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
     text-align: center;
 }
 
@@ -55,20 +58,22 @@ h1 {
 /* --- ميزة Floating Label --- */
 
 .input-group {
-    position: relative; /* لجعل الـ Label يتحرك بالنسبة لهذه الحاوية */
+    position: relative;
+    /* لجعل الـ Label يتحرك بالنسبة لهذه الحاوية */
     margin-bottom: 20px;
     width: 100%;
 }
 
 .input-group input {
     width: 100%;
-  padding: 12px;
+    padding: 12px;
     border: 1.5px solid #ddd;
     border-radius: 15px;
     background: transparent;
     outline: none;
     font-size: 16px;
-    transition: 0.3s; /* لجعل الحركات ناعمة */
+    transition: 0.3s;
+    /* لجعل الحركات ناعمة */
 }
 
 /* وضع النص (Label) داخل مربع النص في البداية */
@@ -78,15 +83,17 @@ h1 {
     top: 50%;
     transform: translateY(-50%);
     color: #999;
-    pointer-events: none; /* يسمح بالضغط على الـ input من خلال النص */
+    pointer-events: none;
+    /* يسمح بالضغط على الـ input من خلال النص */
     transition: 0.3s all ease;
-    background: #fdfaf5; /* خلفية للنص لكي يغطي خط المربع عند الصعود */
+    background: #fdfaf5;
+    /* خلفية للنص لكي يغطي خط المربع عند الصعود */
     padding: 0 5px;
 }
 
 /* الكود السحري: عند الضغط (Focus) أو عندما لا يكون الحقل فارغاً، يرتفع النص للأعلى */
-.input-group input:focus ~ label,
-.input-group input:not(:placeholder-shown) ~ label {
+.input-group input:focus~label,
+.input-group input:not(:placeholder-shown)~label {
     top: 0;
     right: 10px;
     font-size: 13px;
@@ -116,19 +123,27 @@ h1 {
 
 .login-btn:hover {
     background-color: #e07a7a;
-    transform: translateY(-2px); /* رفعة بسيطة عند وضع الماوس */
+    transform: translateY(-2px);
+    /* رفعة بسيطة عند وضع الماوس */
 }
 
 /* --- تنسيق نافذة التنبيه (Modal) --- */
 
 .modal {
-    display: none; /* مخفية افتراضياً */
+    display: none;
+    /* مخفية افتراضياً */
     position: fixed;
     z-index: 1000;
-    left: 0; top: 0; width: 100%; height: 100%;
-    background: rgba(0,0,0,0.4); /* تعتيم الخلفية */
-    backdrop-filter: blur(4px);   /* تغبيش الخلفية */
-    align-items: center; justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* تعتيم الخلفية */
+    backdrop-filter: blur(4px);
+    /* تغبيش الخلفية */
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-content {
@@ -137,5 +152,5 @@ h1 {
     border-radius: 25px;
     text-align: center;
     max-width: 320px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
